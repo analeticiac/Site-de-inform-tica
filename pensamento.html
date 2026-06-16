@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensamento Computacional - Artigo</title>
+    <style>
+        /* Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Títulos com destaque em Azul */
+        h1 {
+            color: #1e3a8a; /* Azul Escuro Principal */
+            font-size: 2.2rem;
+            border-bottom: 3px solid #3b82f6; /* Linha de destaque azul */
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h2 {
+            color: #2563eb; /* Azul Intermediário */
+            font-size: 1.6rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            color: #1d4ed8; /* Azul Escuro para Subtítulos */
+            font-size: 1.25rem;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        /* Parágrafos e Formatação de Texto */
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+
+        /* Listas identificadas por letras */
+        ul {
+            list-style-type: none;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        /* Destaques dentro do texto */
+        .highlight {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Container sutil para os subitens e exemplos */
+        article {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-left: 4px solid #3b82f6;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+
+        article p:last-child, article ul:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Botão Personalizado de Voltar */
+        .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 22px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #2563eb;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+
+        .btn-voltar:hover {
+            background-color: #1d4ed8;
+            box-shadow: 0 4px 8px rgba(29, 78, 216, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-voltar:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(29, 78, 216, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        
+        <h1>Pensamento Computacional: Conceitos, Pilares e Aplicações Práticas</h1>
+
+        <section id="introducao">
+            <h2>1 INTRODUÇÃO</h2>
+            <p>O pensamento computacional consiste em um método de formulação e resolução de problemas que se baseia nos fundamentos da ciência da computação. O termo ganhou notoriedade global a partir dos trabalhos da pesquisadora Jeannette Wing, em 2006, que o definiu como uma habilidade essencial para todas as pessoas, e não apenas para cientistas da computação (WING, 2006). Trata-se de um processo cognitivo estruturado que permite compreender um problema complexo e desenvolver soluções que possam ser executadas de forma eficiente por agentes humanos ou processadores digitais.</p>
+            <p>Diferente do que sugere o nome, o pensamento computacional não se limita à programação de computadores ou ao uso de tecnologia de hardware. Ele se estabelece como uma competência transversal e interdisciplinar, aplicável na matemática, nas ciências humanas, nas artes e na gestão do cotidiano. Sua relevância pedagógica e profissional reside na capacidade de transformar desafios abstratos em soluções lógicas, replicáveis e escaláveis.</p>
+        </section>
+
+        <section id="pilares">
+            <h2>2 OS QUATRO PILARES DO PENSAMENTO COMPUTACIONAL</h2>
+            <p>A aplicação do pensamento computacional ocorre por meio de quatro fundamentais, que guiam o indivíduo desde a identificação do problema até a execução da solução.</p>
+
+            <article>
+                <h3>2.1 Decomposição</h3>
+                <p>A decomposição consiste no ato de dividir um problema complexo ou um sistema grande em partes menores, mais simples e gerenciáveis. Ao quebrar o obstáculo principal em fragmentos menores, o solucionador reduz a carga cognitiva e consegue analisar cada componente individualmente.</p>
+            </article>
+
+            <article>
+                <h3>2.2 Reconhecimento de Padrões</h3>
+                <p>Após a decomposição, o próximo passo envolve a busca por regularidades, tendências ou similaridades entre os problemas menores identificados e outras experiências já vivenciadas. O reconhecimento de padrões permite o reaproveitamento de soluções pré-existentes, otimizando o tempo de resolução e prevendo o comportamento de novas variáveis.</p>
+            </article>
+
+            <article>
+                <h3>2.3 Abstração</h3>
+                <p>A abstração é o processo de filtragem de informações. Nessa etapa, o indivíduo ignora os detalhes irrelevantes e foca exclusivamente nos elementos essenciais do problema. Ao eliminar o "ruído" ou as características específicas de um cenário, cria-se um modelo conceitual genérico aplicável a situações semelhantes.</p>
+            </article>
+
+            <article>
+                <h3>2.4 Algoritmos</h3>
+                <p>O último pilar consiste na criação de um conjunto de instruções passo a passo, claras e ordenadas, para solucionar o problema ou realizar uma tarefa. O algoritmo funciona como um manual de instruções que, se seguido rigorosamente, garante sempre o mesmo resultado esperado.</p>
+            </article>
+        </section>
+
+        <section id="exemplos">
+            <h2>3 EXEMPLOS PRÁTICOS DE APLICAÇÃO</h2>
+            <p>Para ilustrar a versatilidade do método, apresentam-se a seguir dois exemplos práticos de aplicação dos pilares em contextos distintos.</p>
+
+            <article>
+                <h3>3.1 Exemplo no Cotidiano: Planejamento de uma Viagem de Férias</h3>
+                <p>A organização de uma viagem internacional pode parecer um desafio complexo, mas o pensamento computacional facilita sua execução:</p>
+                <ul>
+                    <li><strong>a) Decomposição:</strong> O viajante divide o projeto em blocos menores: orçamento, documentação (passaporte e vistos), hospedagem, transporte e roteiro turístico;</li>
+                    <li><strong>b) Reconhecimento de Padrões:</strong> O indivíduo percebe que o processo de compra de passagens aéreas segue o mesmo padrão de sites de compras de hotel. Ele também lembra que viagens anteriores exigiram antecedência mínima de três meses para obter melhores preços;</li>
+                    <li><strong>c) Abstração:</strong> Ao definir o roteiro, o viajante foca no tempo de deslocamento entre as cidades e nos custos gerais, ignorando temporariamente detalhes secundários, como a cor da mala ou o cardápio exato de cada restaurante;</li>
+                    <li><strong>d) Algoritmo:</strong> Cria-se um cronograma diário detalhado (passo a passo): 1. Acordar às 07h; 2. Pegar o metrô Linha Azul até a estação central; 3. Visitar o museu X; 4. Almoçar na região central.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>3.2 Exemplo no Contexto Escolar: Análise de Contos Literários</h3>
+                <p>Na disciplina de Língua Portuguesa, o pensamento computacional ajuda alunos a compreenderem a estrutura de narrativas complexas:</p>
+                <ul>
+                    <li><strong>a) Decomposição:</strong> O estudante divide o livro em elementos estruturais: introdução, conflito, clímax e desfecho, além de mapear as características de cada personagem;</li>
+                    <li><strong>b) Reconhecimento de Padrões:</strong> O aluno identifica que a maioria dos contos de fadas segue o padrão da "Jornada do Herói", onde o protagonista enfrenta um desafio, supera barreiras e retorna transformado;</li>
+                    <li><strong>c) Abstração:</strong> Para fazer um resumo da obra, o estudante foca apenas nos acontecimentos que alteram o rumo da história, ignorando as descrições detalhadas de cenários ou diálogos secundários;</li>
+                    <li><strong>d) Algoritmo:</strong> O professor propõe a criação de uma estrutura lógica para que os alunos escrevam seus próprios contos: Passo 1: Apresentar o herói; Passo 2: Inserir um problema; Passo 3: Mostrar a resolução do problema; Passo 4: Concluir com uma lição de moral.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="consideracoes">
+            <h2>4 CONSIDERAÇÕES FINAIS</h2>
+            <p>O pensamento computacional consolida-se como uma metodologia estruturada de raciocínio lógico essencial para a sociedade contemporânea. 
+            <p>Ao desmistificar a complexidade dos problemas cotidianos e profissionais por meio dos pilares de decomposição, reconhecimento de padrões, abstração e algoritmos, indivíduos tornam-se mais autônomos e eficazes na tomada de decisões.</p>
+            <p>Compreender esse conceito não significa transformar a mente humana em uma máquina, mas sim capacitar o intelecto humano a direcionar o potencial das tecnologias atuais para a resolução dos grandes desafios globais.</p>
+<!-- Botão para voltar à página inicial -->
+<div style="text-align: left;">
+    <a href="index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+</div>
+    </main>
+
+</body>
+</html>

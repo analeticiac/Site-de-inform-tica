@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robótica Educacional - Artigo</title>
+    <style>
+        /* Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            background-color: #f8fafc;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Títulos com destaque em Azul */
+        h1 {
+            color: #1e3a8a; /* Azul Escuro Principal */
+            font-size: 2.2rem;
+            border-bottom: 3px solid #3b82f6; /* Linha de destaque azul */
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h2 {
+            color: #2563eb; /* Azul Intermediário */
+            font-size: 1.6rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            color: #1d4ed8; /* Azul Escuro para Subtítulos */
+            font-size: 1.25rem;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        /* Parágrafos e Formatação de Texto */
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+
+        /* Destaques dentro do texto */
+        .highlight {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Container sutil para os subitens */
+        article {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-left: 4px solid #3b82f6;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+
+        article p:last-child {
+            margin-bottom: 0;
+        }
+        .btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px; /* Tamanho médio ideal */
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #2563eb; /* Azul padrão dos seus títulos */
+    text-decoration: none; /* Remove o sublinhado de link */
+    border-radius: 8px; /* Bordas arredondadas modernas */
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+    transition: all 0.3s ease; /* Transição suave de cor e efeito */
+    cursor: pointer;
+    margin-top: 30px; /* Espaçamento do conteúdo acima */
+}
+
+/* Efeito ao passar o mouse por cima (Hover) */
+.btn-voltar:hover {
+    background-color: #1d4ed8; /* Azul um pouco mais escuro */
+    box-shadow: 0 4px 8px rgba(29, 78, 216, 0.3);
+    transform: translateY(-2px); /* Leve efeito de subir ao passar o mouse */
+}
+
+/* Efeito ao clicar no botão */
+.btn-voltar:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(29, 78, 216, 0.2);
+}
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        
+        <h1>Robótica Educacional</h1>
+
+        <section id="introducao">
+            <h2>1 INTRODUÇÃO</h2>
+            <p>A Robótica Educacional (RE) surge como uma resposta às demandas de um cenário pedagógico contemporâneo, o qual exige estudantes ativos e preparados para solucionar problemas complexos.</p>
+            <p>De acordo com Alimisis (2013), essa metodologia não visa apenas ensinar a construir máquinas, mas sim utilizar a tecnologia como uma ferramenta para o desenvolvimento cognitivo.</p>
+            <p>Ao manipular componentes físicos e criar linhas de código, o estudante deixa de ser um mero consumidor de tecnologia e passa a ser um produtor de conhecimento.</p>
+            <p>O objetivo deste trabalho é contextualizar a aplicação da RE e apresentar exemplos práticos de sua implementação no ambiente escolar.</p>
+        </section>
+
+        <section id="fundamentacao">
+            <h2>2 FUNDAMENTAÇÃO TEÓRICA</h2>
+            <p>A base teórica da Robótica Educacional está fortemente ancorada no Construcionismo de Seymour Papert. Papert (1980) argumenta que o aprendizado é mais eficaz quando o aluno engaja-se ativamente na construção de um objeto de seu próprio interesse.</p>
+            <p>Na RE, o erro não é punido, mas ressignificado como parte do processo de depuração (<span class="highlight">debugging</span>), permitindo que o estudante teste hipóteses em tempo real.</p>
+        </section>
+
+        <section id="exemplos">
+            <h2>3 EXEMPLOS PRÁTICOS DE APLICAÇÃO</h2>
+            <p>A implementação da RE varia de acordo com a faixa etária e os recursos disponíveis na instituição de ensino. Abaixo, destacam-se três exemplos principais.</p>
+
+            <article>
+                <h3>3.1 Robótica de Encaixe (Kits Comerciais)</h3>
+                <p>A utilização de kits prontos, como Lego Education ou VEX Robotics, é comum nos ensinos Fundamental e Médio. Os alunos recebem motores, sensores de presença e blocos de construção.</p>
+                <p>Um exemplo clássico é o desafio do <span class="highlight">"Robô Seguidor de Linha"</span>, no qual os alunos programam sensores infravermelhos para que o dispositivo siga um trajeto demarcado no chão. Esse exercício ensina conceitos de lógica condicional (SE/ENTÃO) e física mecânica.</p>
+            </article>
+
+            <article>
+                <h3>3.2 Robótica de Baixo Custo (Sucatônica)</h3>
+                <p>Para realidades escolares com restrições orçamentárias, a robótica com materiais recicláveis (sucata) associada a componentes eletrônicos avulsos é uma alternativa viável.</p>
+                <p>Os estudantes constroem, por exemplo, um <span class="highlight">"Braço Hidráulico"</span> utilizando papelão, seringas descartáveis e mangueiras de soro. O projeto exemplifica visualmente o Princípio de Pascal (Física) e a reutilização de resíduos (Educação Ambiental).</p>
+            </article>
+
+            <article>
+                <h3>3.3 Programação e Computação Física (Arduino)</h3>
+                <p>No Ensino Médio, o uso da placa microcontroladora Arduino permite projetos mais complexos.</p>
+                <p>Um exemplo prático é a criação de uma <span class="highlight">"Estufa Automatizada"</span>. Os alunos conectam sensores de umidade de solo e sensores de temperatura à placa. O sistema é programado para ativar uma minibomba de água sempre que o solo estiver seco. A atividade conecta diretamente a Biologia (necessidades das plantas) com a Matemática (leitura de dados e gráficos).</p>
+            </article>
+        </section>
+
+        <section id="consideracoes">
+            <h2>4 CONSIDERAÇÕES FINAIS</h2>
+            <p>A Robótica Educacional consolida-se como um recurso didático versátil e inclusivo. Ela desenvolve habilidades técnicas (programação e eletrônica) e competências socioemocionais, como o trabalho em equipe, a resiliência e o pensamento crítico.</p>
+            <p>Portanto, sua expansão nas matrizes curriculares constitui um passo fundamental para a modernização da educação básica.</p>
+        </section>
+<!-- Botão para voltar à página inicial -->
+<div style="text-align: left;">
+    <a href="index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+</div>
+    </main>
+
+</body>
+</html>
