@@ -1,0 +1,573 @@
+/* ==========================================================
+   INFORMÁTICA EDUCACIONAL
+   style.css
+   Design moderno, responsivo e profissional
+   ========================================================== */
+
+/* =====================
+   RESET GERAL
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* =====================
+   MENU SUPERIOR
+===================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+}
+
+.navbar{
+    background:#0d47a1;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#90caf9;
+}
+
+/* =====================
+   INTRODUÇÃO
+===================== */
+
+.intro{
+    text-align:center;
+    padding:160px 20px 40px;
+    background:#f5f9ff;
+}
+
+.intro h1{
+    color:#0d47a1;
+    margin-bottom:20px;
+    font-size:2.5rem;
+}
+
+.intro .slogan{
+    color:#0d47a1;
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.intro p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#444;
+}
+
+/* =====================
+   CARROSSEL
+===================== */
+
+.carousel-container{
+    margin-top:90px;
+    width:100%;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.carousel{
+    position:relative;
+    width:100%;
+}
+
+.slide{
+    display:none;
+    width:100%;
+}
+
+.slide.active{
+    display:block;
+    animation:fade 1s;
+}
+
+.slide img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+.btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:rgba(0,0,0,.5);
+    color:white;
+    font-size:2rem;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+    z-index:10;
+    border-radius:50%;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1565c0;
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+.hero h1{
+    color:#0d47a1;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+/* =====================
+   SEÇÕES
+===================== */
+
+.content-section{
+    max-width:1200px;
+    margin:70px auto;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    padding:20px;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.content-image{
+    flex:1;
+}
+
+.content-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.content-image img:hover{
+    transform:scale(1.03);
+}
+
+.content-text{
+    flex:1;
+}
+
+.content-text h2{
+    color:#0d47a1;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.content-text p{
+    text-align:justify;
+    font-size:1.05rem;
+}
+
+/* =====================
+   CARDS
+===================== */
+
+.cards-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:.95rem;
+}
+
+/* =====================
+   FORMULÁRIO
+===================== */
+
+.form-section{
+    background:white;
+    padding:60px 20px;
+}
+
+.form-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d47a1;
+}
+/* =====================
+   FORMULÁRIO
+===================== */
+
+.form-section{
+    background:white;
+    padding:60px 20px;
+}
+
+.form-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d47a1;
+}
+
+/* ADICIONE AQUI */
+.subtitulo-form{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 30px auto;
+    color:#555;
+    font-size:1.1rem;
+    line-height:1.6;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+form input{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:1rem;
+    transition:.3s;
+}
+
+form input:focus{
+    border-color:#1565c0;
+    outline:none;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    background:#1565c0;
+    color:white;
+    font-size:1rem;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#0d47a1;
+}
+
+#mensagem{
+    margin-top:10px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.erro{
+    color:#d50000;
+}
+
+.sucesso{
+    color:#2e7d32;
+}
+
+/* =====================
+   GOOGLE MAPS
+===================== */
+
+.mapa{
+    margin-top:30px;
+}
+
+.mapa iframe{
+    width:100%;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+/* =====================
+   RODAPÉ
+===================== */
+
+footer{
+    background:#0d47a1;
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+footer h2{
+    margin-bottom:20px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+footer a{
+    color:white;
+}
+
+.copyright{
+    margin-top:25px;
+    border-top:1px solid rgba(255,255,255,.3);
+    padding-top:20px;
+}
+
+/* =====================
+   BOTÃO TOPO
+===================== */
+
+#topButton{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#1565c0;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 3px 8px rgba(0,0,0,.3);
+}
+
+#topButton:hover{
+    background:#0d47a1;
+}
+
+/* =====================
+   ANIMAÇÕES
+===================== */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.8s;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =====================
+   RESPONSIVIDADE
+===================== */
+
+@media(max-width:992px){
+
+    .content-section{
+        flex-direction:column;
+    }
+
+    .reverse{
+        flex-direction:column;
+    }
+
+    .content-text{
+        text-align:center;
+    }
+
+    .content-text p{
+        text-align:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .slide img{
+        height:350px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .slide img{
+        height:250px;
+    }
+
+    .btn{
+        width:40px;
+        height:40px;
+        font-size:1.3rem;
+    }
+
+    .content-text h2{
+        font-size:1.6rem;
+    }
+
+    form{
+        width:100%;
+    }
+
+}
+
+/* =====================
+   SCROLLBAR
+===================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e0e0e0;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#1565c0;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0d47a1;
+}
+
+input {
+    /* Define uma largura máxima confortável para formulários */
+    max-width: 400px; 
+    
+    /* Garante que ele ocupe até 100% da tela em celulares */
+    width: 100%;      
+    
+    /* Centraliza os campos na tela */
+    display: block;   
+    margin: 10px auto; 
+    
+    /* Melhora o espaçamento interno do texto */
+    padding: 12px;    
+    
+    /* Mantém as bordas arredondadas como na imagem */
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho final */
+}
+
+/* =====================
+   FIM DO ARQUIVO
+===================== */
